@@ -126,3 +126,7 @@ LOGOUT_REDIRECT_URL = "home"  # redirect to the homepage
 # Django-crispy-forms is an application that helps to manage Django forms.
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" # new
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+
+# This backend is not intended for use in production, instead for sending email during development stage
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
