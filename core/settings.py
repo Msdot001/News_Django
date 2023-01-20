@@ -128,5 +128,11 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" # new
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 
-# This backend is not intended for use in production, instead for sending email during development stage
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# This backend is not intended for use in production, instead for sending email during development/testing stage
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' 
+DEFAULT_FROM_EMAIL ="omoshood441@gmail.com"
+EMAIL_HOST = "smtp.sendgrid.net"
+EMAIL_HOST_USER = "apikey"
+EMAIL_HOST_PASSWORD ="Ilovemagic@1234."
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
