@@ -49,7 +49,7 @@ class ArticleCreateView(LoginRequiredMixin, CreateView):
     template_name = "article_new.html"
     fields = ("title", "body",)
 
-    def form_valid(self, form): # new
+    def form_valid(self, form):
         """Setting the author to the current logged-in User"""
         form.instance.author = self.request.user
         return super().form_valid(form)
