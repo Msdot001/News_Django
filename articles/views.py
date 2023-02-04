@@ -15,10 +15,10 @@ class ArticleDetailView(DetailView):
 class ArticleUpdateView(UpdateView):
     model = Article
     fields =("title", "body",)   # field intend to update
-    template_name = "article_update.html"
+    template_name = "article_edit.html"
 
 class ArticleDeleteView(DeleteView):
     model= Article
-    template_name = "article_delete"
+    template_name = "article_delete.html"
     success_url = reverse_lazy("article_list")
 
