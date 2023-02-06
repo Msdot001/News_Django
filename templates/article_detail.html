@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
+
 
 {% block content %}
 <div class="article-entry">
@@ -8,11 +10,20 @@
 </div>
 
 <hr>
+
+<!--change for Django admin dashboard-->
 <h4>Comments</h4>
 {% for comment in article.comment_set.all %}
     <p>{{ comment.author }} &middot; {{ comment }}</p>
 {% endfor %}
+
 <hr>
+<!--change for form-->
+<h4>Add a comment</h4>
+    <form action="" method="post">{% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-success ml-2" type="submit">Save</button>
+    </form>
 
 <p><a href="{% url 'article_edit' article.pk %}">Edit</a> |
     <a href="{% url 'article_delete' article.pk %}">Delete</a></p>
