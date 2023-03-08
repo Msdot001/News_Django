@@ -3,6 +3,8 @@
 The Django app offers a comprehensive solution for managing multiple mass-mailing lists. It allows you to create both plain text and HTML templates 
 with integrated rich text widgets, and features a sophisticated queueing system, all manageable from the user-friendly admin interface.
 
+<p align="center"><img src="https://www.sendinblue.com/wp-content/uploads/2020/02/how_to_create_a_newsletter_t.png"></p>
+
 ## Features
 
 - User registration and login system
