@@ -17,7 +17,7 @@ with integrated rich text widgets, and features a sophisticated queueing system,
 
 ## Installation
 
-- Clone this repository using git clone https://github.com/msdot001/News_Django.git
+- Clone this repository using git clone https://github.com/Msdot001/News_Django.git
 - Navigate to the cloned directory using cd news
 - Create a new virtual environment using python -m venv env
 - Activate the virtual environment using source env/bin/activate (Linux/Mac) or .\env\Scripts\activate (Windows)
